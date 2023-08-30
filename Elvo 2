@@ -1,0 +1,25 @@
+<!-- Pseudo-code for even/odd contract strategy -->
+<block type="start_definition">
+  <block type="main">
+    <!-- Define variables and strategy parameters -->
+    
+    <!-- While loop for continuous monitoring -->
+    <block type="while_loop">
+      <block type="market_condition">
+        <field name="CONDITION">CONTINUOUS</field>
+        <statement name="ACTIONS">
+          <!-- Block for watching and buying contract -->
+          <block type="watch_and_buy">
+            <field name="SYMBOL">SYMBOL_NAME</field>
+            <field name="CONTRACT_TYPE">DIGITEVEN</field>
+            <value name="AMOUNT">
+              <shadow type="math_number">
+                <field name="NUM">1</field>
+              </shadow>
+            </value>
+          </block>
+        </statement>
+      </block>
+    </block>
+  </block>
+</block>
